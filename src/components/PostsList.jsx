@@ -1,7 +1,11 @@
+import { useContext } from "react"
+import PostRieceContex from "../contexs/PostRieceContex"
 import PostCard from "./PostCard"
 
 
-export default function PostsList({ postsList }) {
+export default function PostsList() {
+
+    const { postsList } = useContext(PostRieceContex)
 
     return (
 
